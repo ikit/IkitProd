@@ -1,2 +1,3 @@
-# IkitProd
-Mon site web personnel
+![](pages/home/logo.png)
+
+Site web perso d'Ikit. 
