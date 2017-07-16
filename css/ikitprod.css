@@ -4,3 +4,39 @@
 	color: #aaa;
 }
 
+
+.panel-default
+{
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 0;
+}
+.panel-default > .panel-heading
+{
+	padding: 15px;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+}
+.panel-title
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+.panel-body
+{
+	padding: 15px;
+}
+
+.historic li, .websites li
+{
+	list-style: none;
+}
+
+.historic li span
+{
+	display: inline-block;
+	width: 150px;
+	color: #999;
+}
