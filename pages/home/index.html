@@ -1,0 +1,34 @@
+
+
+    <div class="container-fluid">
+
+    <img src='./logo.png'/>
+
+    <p>In progress</p>
+
+    <p id="citation"></p>
+
+    </div>
+
+
+    <script type="text/javascript">
+    	var lines;
+		var randomNumber;
+		var lastRandomNumber;
+
+
+		// load the trivia from the server
+		$.ajax(
+		{
+			url: 'citations.txt'
+		}).done(function(content) 
+		{
+			// normalize the line breaks, then split into lines
+			lines = content.replace(/\r\n|\r/g, '\n').trim().split('\n');
+			randomNumber = parseInt(Math.random() * lines.length);
+			$('#citation').html(lines[randomNumber]);
+		});
+
+
+
+    </script>
